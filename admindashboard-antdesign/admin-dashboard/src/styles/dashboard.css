@@ -4,7 +4,8 @@
 }
 
 .header{
-    background-color: white;
+    background-color:white;
+
 }
 
 .brand{
@@ -14,4 +15,5 @@
 
 .content{
     padding: 24px;
+    overflow:auto;
 }
