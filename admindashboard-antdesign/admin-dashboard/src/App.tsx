@@ -1,3 +1,5 @@
+import { useState } from "react";
+import "./styles/dashboard.css";
 import {
   Layout,
   Menu,
@@ -6,7 +8,6 @@ import {
   Divider,
   Row,
   Col,
-  Anchor,
   Table,
   Tag,
   Button,
@@ -20,23 +21,22 @@ import {
   List,
   Modal,
   notification,
-  FloatButton
 } from "antd";
-import "./styles/dashboard.css";
+import Card from "antd/es/card/Card";
 import { Content, Header } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
+import ButtonGroup from "antd/es/button/button-group";
+
 import { HiOutlineHome } from "react-icons/hi";
-import { GrAdd, GrOrganization } from "react-icons/gr";
+import { GrOrganization } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
-import Card from "antd/es/card/Card";
 import { AiOutlineMoneyCollect } from "react-icons/ai";
+
+
 import {faker} from '@faker-js/faker';
-import ButtonGroup from "antd/es/button/button-group";
 import dayjs from "dayjs";
 
-// const {Link} = Anchor;
 
 const generateData = () => {
   const dat = [];
@@ -211,24 +211,6 @@ function App() {
             },
             ] }/>
           </Card>
-          {/* <Row gutter={10}>
-            <Col span={6}>
-              <Card>
-                <Typography.Title>Something</Typography.Title>
-              </Card>
-            </Col>
-            <Col span={18}>
-              <Card>
-                <Anchor>
-                  <Link href="#test" title="Link1"/>
-                  <Link href="#test" title="Link2"/>
-                  <Link href="#test" title="Link3"/>
-                  <Link href="#test" title="Link4"/>
-                  
-                </Anchor>
-              </Card>
-            </Col>
-          </Row> */}
           <Row gutter={10} style={{
             marginTop: 10
           }}>
